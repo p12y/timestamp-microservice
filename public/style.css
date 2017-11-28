@@ -1,0 +1,47 @@
+/****** Main Styling ******/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #222;
+}
+
+.container {
+	padding: 0;
+	margin: 5vmin 30vw;
+}
+
+h2 {
+  color: #9452af;
+}
+
+ul {
+  list-style-type: none;
+}
+
+code {
+  padding: .2rem .5rem;
+  white-space: nowrap;
+  border: 1px solid #9452af;
+  border-radius: 5px;
+  line-height: 2em;
+  background: #eaeaea;
+}
+
+span.highlight {
+  background: #fff9c9;
+}
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 480px) {
+  .container {
+    padding: 0;
+    margin: 5vmin 10vw;
+  }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 1000px) {
+  .container {
+    padding: 0;
+    margin: 5vmin 15vw;
+  }
+}

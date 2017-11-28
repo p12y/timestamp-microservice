@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Timestamp Microservice</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h1>Timestamp Microservice</h1>
+        <h2>
+          How to Use
+        </h2>
+        <ol>
+          <li>Pass a string as a parameter, and the API with check to see if it contains either a unix timestamp or a natural language date <span class="highlight">in any format compliant with RFC-1123 or ISO-8601</span> (example: January 1, 2016).</li>
+          <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+          <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+        </ol>
+        <h2>
+          Example Usage
+        </h2>
+        <ul>
+          <li><code>https://timestamp-node.glitch.me/December%2015,%202015</code></li>
+          <li><code>https://timestamp-node.glitch.me/1450137600</code></li>
+          <li><code>https://timestamp-node.glitch.me/15 dec 15</code></li>
+          <li><code>https://timestamp-node.glitch.me/dec 15, 15</code></li>
+          <li><code>https://timestamp-node.glitch.me/12-15-15</code></li>
+          <li><code>https://timestamp-node.glitch.me/12/15/2015</code></li>
+        </ul>
+        <h2>
+          Example Output
+        </h2>
+        <ul>
+          <li><code>{"unix":1450137600,"natural":"Tue Dec 15 2015"}</code></li>
+        </ul>
+      </div>
+   </body>
+
+</html>
